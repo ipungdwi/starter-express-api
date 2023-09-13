@@ -1,32 +1,49 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kode Weather Apps</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet" />
+    <meta charset="utf-8">
+    <title>Notes App in JavaScript | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Iconscout Link For Icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css" />
 </head>
 
 <body>
-    <div class="container">
-        <fieldset>
-            <form action="/" method="POST">
-                <input type="text" class="ghost-input" name="city" id="" placeholder="Enter a City" required />
-                <input type="submit" class="ghost-button" name="" id="" value="Get Weather" />
-            </form>
-            <% if(weather !== null){ %>
-                <p><%= weather %></p>
-            <% } %>
-
-            <% if(error !== null){ %>
-                <p><%= error %></p>
-            <% } %>
-        </fieldset>
+    <div class="popup-box">
+        <div class="popup">
+            <div class="content">
+                <header>
+                    <p></p>
+                    <i class="uil uil-times"></i>
+                </header>
+                <form action="#">
+                    <div class="row title">
+                        <label>Title</label>
+                        <input type="text" spellcheck="false">
+                    </div>
+                    <div class="row description">
+                        <label>Description</label>
+                        <textarea spellcheck="false"></textarea>
+                    </div>
+                    <button></button>
+                </form>
+            </div>
+        </div>
     </div>
+    <div class="wrapper">
+        <li class="add-box">
+            <div class="icon"><i class="uil uil-plus"></i></div>
+            <p>Add new note</p>
+        </li>
+    </div>
+
+    <script src="/js/script.js"></script>
+
 </body>
 
 </html>
